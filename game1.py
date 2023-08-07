@@ -40,6 +40,7 @@ def score_game(random_predict) -> int:
     print(f'Average number of attempts to guess the number by this algorithm is {score}')
     return score
 
+
 if __name__ == '__main__':
     # run
     score_game(random_predict)
