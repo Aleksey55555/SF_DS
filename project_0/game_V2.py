@@ -10,12 +10,17 @@ def random_predict(number:int=1) -> int:
         int: number of attemps
     """
     count = 0
+    predict_number = 50
     
     while True:
         count += 1
-        predict_number = np.random.randint(1, 101) # number predicted by computer
+        
         if number == predict_number:
             break # exit while
+        elif number > predict_number:
+            predict_number = np.random.randint(predict_number, 101)
+        else:
+            predict_number = np.random.randint(0, predict_number)
     
     return count
 
@@ -23,13 +28,13 @@ def random_predict(number:int=1) -> int:
 def score_game(random_predict) -> int:
     """Mean number of attempts of guess number algorithm in 1000 tries
     Args:
-        random_predict (_type_): guess number fi=unction
+        random_predict (_type_): guess number function
 
     Returns:
         int: mean number of attempts
     """
     np.random.seed(1) # fix random seed
-    random_array = np.random.randint(1, 101, size=1000) # array numbers for guess
+    random_array = np.random.randint(0, 101, size=1000) # array numbers for guess
     count_ls = [] # list of numbers of attempts
     
     for number in random_array:
