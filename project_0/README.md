@@ -1,12 +1,17 @@
 # **Project 0 Game: Guess the number**
 
 ## Contents
-[1. Description]()
-[2. Case]()
-[3. Data information]()
-[4. Stages of project]()
-[5. Result]()
-[6. Conclusion]()
+[1. Description](#description)
+
+[2. Case](#case)
+
+[3. Data information](#data-information)
+
+[4. Stages of project](#stages-of-project)
+
+[5. Result](#result)
+
+[6. Conclusion](#conclusion)
 
 
 ### Description
