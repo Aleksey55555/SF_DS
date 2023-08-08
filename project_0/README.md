@@ -50,7 +50,7 @@ To write a good script in Python
 
 [3. Script for an algorithm for calculating a mean number of attempts of guess number algorithm per 1000 attempts](https://github.com/Aleksey55555/SF_DS/blob/main/project_0/game_V2.py)
 
-[4. link to github.com ](https://github.com/Aleksey55555/SF_DS/tree/main/project_0)
+[4. Link to github.com ](https://github.com/Aleksey55555/SF_DS/tree/main/project_0)
 
 
 ### Conclusion
