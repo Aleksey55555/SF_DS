@@ -5,7 +5,7 @@ def alg_predict(number:int=1) -> int:
     """The number will be guessed by algorithm
 
     Args:
-        number (int, optional): your number. Defaults to 1.
+        number (int, optional): number. Defaults to 1.
 
     Returns:
         int: number of attemps to guess
@@ -19,7 +19,7 @@ def alg_predict(number:int=1) -> int:
         count += 1
         temp = predict_number
         difference = abs(predict_number - pre_predict_number) / 2 # increment/decrement of prediction
-        if difference < 1: # round to 1 if increment = 0.5 to pevent loop (prediction = preprediction)
+        if difference < 1: # round to 1 if increment = 0.5 to prevent loop (prediction = preprediction)
             difference = 1
         
         if number == predict_number:
