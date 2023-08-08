@@ -54,4 +54,4 @@ To write a good script in Python
 
 
 ### Conclusion
-I tried to write Python script in VS Code and posted results in https://github.com/.
+I wrote script in Python in VS Code and posted results in https://github.com/.
