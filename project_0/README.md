@@ -44,7 +44,10 @@ To write a good script in Python
 
 
 ### Result
-...
+[1. Script of the algorithm of guessing number with manual input](https://github.com/Aleksey55555/SF_DS/blob/main/project_0/game.py)
+[2. Script for an algorithm of guessing number by compueter](https://github.com/Aleksey55555/SF_DS/blob/main/project_0/game_V2.py)
+[3. Script for an algorithm for calculating a mean number of attempts of guess number algorithm per 1000 attempts](https://github.com/Aleksey55555/SF_DS/blob/main/project_0/game_V2.py)
+[4. link to github.com ](https://github.com/Aleksey55555/SF_DS/tree/main/project_0)
 
 
 ### Conclusion
