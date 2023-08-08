@@ -37,7 +37,10 @@ To write a good script in Python
 
 
 ### Stages of project
-...
+1. To write script for an algorithm of guessing number with manual input.
+2. To write script for an algorithm of guessing number by compueter in the minimum number of attempts.
+3. To write script for an algorithm for calculating a mean number of attempts of guess number algorithm per 1000 attempts.
+4. Post it in https://github.com/
 
 
 ### Result
