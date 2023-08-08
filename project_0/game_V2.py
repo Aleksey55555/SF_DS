@@ -1,34 +1,42 @@
 import numpy as np
 
-def random_predict(number:int=1) -> int:
-    """The number will be guessed random by the computer
+def alg_predict(number:int=1) -> int:
+    """The number will be guessed by algorithm
 
     Args:
         number (int, optional): your number. Defaults to 1.
 
     Returns:
-        int: number of attemps
+        int: number of attemps to guess
     """
     count = 0
     predict_number = 50
+    pre_predict_number = 0
     
     while True:
         count += 1
+        temp = predict_number
+        difference = abs(predict_number - pre_predict_number) / 2
+        if difference < 1:
+            difference = 1
         
         if number == predict_number:
-            break # exit while
+            break # cycle exit
         elif number > predict_number:
-            predict_number = np.random.randint(predict_number, 101)
+            predict_number += difference
+            predict_number = int(predict_number)
+            pre_predict_number = temp
         else:
-            predict_number = np.random.randint(0, predict_number)
-    
+            predict_number -= difference
+            predict_number = int(predict_number)
+            pre_predict_number = temp
     return count
 
 
-def score_game(random_predict) -> int:
-    """Mean number of attempts of guess number algorithm in 1000 tries
+def score_game(predict) -> int:
+    """Mean number of attempts of guess number algorithm per 1000 attempts
     Args:
-        random_predict (_type_): guess number function
+        predict (_type_): guess number function
 
     Returns:
         int: mean number of attempts
@@ -38,7 +46,7 @@ def score_game(random_predict) -> int:
     count_ls = [] # list of numbers of attempts
     
     for number in random_array:
-        count_ls.append(random_predict(number))
+        count_ls.append(predict(number))
     
     score = np.mean(count_ls)
     
@@ -47,5 +55,5 @@ def score_game(random_predict) -> int:
 
 if __name__ == '__main__':
     # run
-    score_game(random_predict)
+    score_game(alg_predict)
     
